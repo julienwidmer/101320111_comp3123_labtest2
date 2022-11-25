@@ -4,7 +4,7 @@ Use the [Open Weather API](https://openweathermap.org/) to retrieve and display 
 
 ## Notes
 * The Postman collection is available in the resources folder `./resources/LabTest2.postman_collection`
-* Screenshots of Postman and the outputs are available in the screenshots folder `./resources/screenshots/*.png`
+* Screenshots of the app, Postman and outputs are available in the screenshots folder `./resources/screenshots/*.png`
 
 ---
 
@@ -33,11 +33,15 @@ inside `TorontoFutureWeather.js` (line 10).
 
 ---
 
-## Preview of the app
+# Preview of the app
 ![Screenshot of the app running in a browser](./resources/screenshots/S1-Browser-Preview.png)
 
 ## Usage of the weather icons provided by the Open Weather API
 ![Screenshot of the app running in a browser with a weather icon highlighted](./resources/screenshots/S2-OpenWeather-Icon.png)
+
+## Terminal Output
+The app runs with 2 deprecation warnings and 0 errors.
+![Screenshot of the terminal output after running the app](./resources/screenshots/S7-Terminal-Output.png)
 
 ---
 
@@ -49,10 +53,11 @@ This component is coded in `TorontoCurrentWeather.js` inside the `components` fo
 ![Screenshot of the app running in a browser with the current weather highlighted](./resources/screenshots/S3-OpenWeather-CurrentWeather.png)
 
 ## Postman response input
+Note: The API was removed from the parameters in Postman AFTER performing the request and BEFORE taking the screenshot.
 ![Screenshot of Postman using the Current Weather Data API](./resources/screenshots/S5-Postman-OpenWeather-CurrentWeather.png)
 
 ---
-#1 Part 2 - Future Weather Forecast
+# Part 2 - Future Weather Forecast
 Displays the weather forecast for the next 3 days.
 
 This component is coded in `TorontoFutureWeather.js` inside the `components` folder and uses the:
@@ -60,4 +65,5 @@ This component is coded in `TorontoFutureWeather.js` inside the `components` fol
 ![Screenshot of the app running in a browser with the future weather highlighted](./resources/screenshots/S4-OpenWeather-FutureWeather.png)
 
 ## Postman response input
+Note: The API was removed from the parameters in Postman AFTER performing the request and BEFORE taking the screenshot.
 ![Screenshot of Postman using the Daily Forecast 16 Days API](./resources/screenshots/S6-Postman-OpenWeather-FutureWeather.png)

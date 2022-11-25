@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "f995f2ad-0078-4e28-9393-5e3516cc9185",
+		"name": "Lab Test 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Toronto Current Weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/weather?q=Toronto&appid={{API_KEY}}",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Toronto"
+						},
+						{
+							"key": "appid",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Daily Forecast 16 Days",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/forecast/daily?lat=-79.4163&lon=43.7001&cnt=3&appid={{API_KEY}}",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "-79.4163"
+						},
+						{
+							"key": "lon",
+							"value": "43.7001"
+						},
+						{
+							"key": "cnt",
+							"value": "3"
+						},
+						{
+							"key": "appid",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -8,9 +8,8 @@ export default class TorontoCurrentWeather extends React.Component {
         wind: []
     }
 
-    // Hook lifecycle component
     componentDidMount() {
-        axios.get("http://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=${{ secrets.OPEN_WEATHER_API_KEY }}")
+        axios.get("http://api.openweathermap.org/data/2.5/weather?q=Toronto&appid={{API_KEY}}")
             .then(res => {
                 const weather = res.data;
                 this.setState(weather);
@@ -20,7 +19,7 @@ export default class TorontoCurrentWeather extends React.Component {
     render() {
         return (
             <>
-                <div class="col-auto text-start">
+                <div class="col text-start my-3">
                     <h2>Current</h2>
                     { this.state.weather.map(weather =>
                         <>
